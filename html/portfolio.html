@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Martin Hermansen</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <script src="/javascript/index.js" defer></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="text_logo">
+            <img src="/img/logo_martin.png" id="img_logo" alt="logo">
+            Martin Hermansen
+        </div>
+        <input type="checkbox" id="nav_check" style="visibility: hidden;">
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="active"> Portfolio</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    
+      <section aria-label="slides">
+        <div class="container">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="/img/reservoir_dogs.jpg" alt="photo" class="image_slide">
+                        <div class="slide-content">
+                            <h1 style="color: #fff;">Film</h1>
+                            <a href="#" class="buttonClass">Check out</a>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="/img/gaming_slide.jpg" alt="photo" class="image_slide">
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+      </section>
+
+</body>
+
+</html>
