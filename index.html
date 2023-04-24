@@ -10,6 +10,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+        crossorigin="anonymous">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header>
@@ -44,10 +53,10 @@
 
         <div style="margin-left: 5%; margin-right: 5%;">
             <div class="header">
-                <table class="headline" cellspacing=20>
+                <table class="headline" cellspacing=40>
                     <tr>
                         <td><img src="./img/pfp1.jpg" class="profilePic" id="profilePic" alt="profilbilde"></td>
-                        <td>
+                        <td style="padding-left: 10px;">
                             <h1>Martin Hermansen</h1>
                             <p>Bor i Fredrikstad</p>
                             <p>Født 16. Februar 2006</p>
@@ -62,7 +71,7 @@
 
             <hr>
     
-            <div class="container text-md-left" style="margin-top: 4%;">
+            <div class="container text-md-left" style="margin-top: 4%; padding-bottom: 10px;">
                 <h2>Om meg</h2>
                 <p style="max-width: 500px;">Jeg er født og oppvokst i Fredrikstad og hatt en interesse for spill og film hele
                     livet.
@@ -71,9 +80,31 @@
                     Tarantino som vekket interessen der.
                 </p>
             </div>
+
+            <div class="container text-md-left" style="margin-top: 4%; padding-bottom: 10px;">
+                <h2>Mine prosjekter</h2>
+                <p style="max-width: 500px;">Jeg jobber både med film og litt spillutvikling på fritiden. Noen av disse prosjektene
+                    vil du finne under PROJECTS siden på nettsiden.
+                </p>
+            </div>
         </div>
-        
-        
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <h3>martin hermansen</h3>
+                <p>Kontakt sekretæren min om du trenger noen å snakke med: 90061232 <i class="fa-solid fa-phone"></i></p>
+                <p>Kontakt meg via mail på <a href="mailto:martinher@viken.no">martinher@viken.no</a> <i class="fa-solid fa-envelope"></i></p>
+                    <ul class="socials">
+                        <li><a href="https://github.com/martinher00" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://viken.no/glemmen-vgs/" target="_blank"><i class="fa-sharp fa-solid fa-graduation-cap"></i></a></li>
+                    </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>website designed by <span>martin hermansen</span></p>
+            </div>
+        </footer>
         
     </body>
 </html>
