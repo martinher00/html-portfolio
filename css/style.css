@@ -123,6 +123,17 @@ header nav ul li a.active {
     }
 }
 
+/* Header main page */
+.profilePic {
+    border-radius: 50%;
+    height: 200px;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Carousel */
 
 *, *::before, *::after{
