@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Martin Hermansen</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-        <!-- Font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+
+<head>
+    <meta charset="UTF-8">
+    <title>Martin Hermansen</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <header>
-            <div class="text_logo">
-                <img src="./img/logo_martin.png" id="img_logo" alt="logo">
-                Martin Hermansen    
-            </div>
-            <input type="checkbox" id="nav_check" style="visibility: hidden;">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="./html/portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="./html/projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./html/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <label for="nav_check" class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-        </header>
+</head>
 
+<body>
+    <header class="sticky">
+        <div class="text_logo">
+            <img src="./img/logo_martin.png" id="img_logo" alt="logo">
+            Martin Hermansen
+        </div>
+        <input type="checkbox" id="nav_check" style="visibility: hidden;">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="./html/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
 
+    <div class="content">
         <div style="margin-left: 5%; margin-right: 5%;">
             <div class="header">
                 <table class="headline" cellspacing=40>
@@ -66,11 +68,10 @@
 
             <hr>
 
-            
-    
             <div class="container text-md-left" style="margin-top: 4%; padding-bottom: 10px;">
                 <h2>Om meg</h2>
-                <p style="max-width: 500px;">Jeg er født og oppvokst i Fredrikstad og hatt en interesse for spill og film hele
+                <p style="max-width: 500px;">Jeg er født og oppvokst i Fredrikstad og hatt en interesse for spill og
+                    film hele
                     livet.
                     Det første ordentlige spillet jeg spilte var Minecraft, noe som senere gjorde meg interessert
                     i spillutvikling. Når det gjelder film derimot, var det hovedsaklig Kubrick og
@@ -78,30 +79,64 @@
                 </p>
             </div>
 
-            <div class="container text-md-left" style="margin-top: 4%; padding-bottom: 10px;">
-                <h2>Mine prosjekter</h2>
-                <p style="max-width: 500px;">Jeg jobber både med film og litt spillutvikling på fritiden. Noen av disse prosjektene
-                    vil du finne under PROJECTS siden på nettsiden.
-                </p>
-            </div>
+            <section id="projects"></section>
+                <div class="container text-md-left" style="margin-top: 4%; padding-bottom: 10px; display: flex; gap: 1rem;">
+                    <div>
+                        <img src="./img/projecects.jpg" alt="bilde"
+                            style="width: 400px; border-radius: 1em; box-shadow: -5px 3px 5px #00000066;">
+                    </div>
+                    <div>
+                        <h2>Mine prosjekter</h2>
+                        <p style="max-width: 500px;">Jeg jobber både med film og litt spillutvikling på fritiden. Noen av
+                            disse prosjektene
+                            vil du finne under <a class="link" href="./html/projects.html">PROSJEKTER</a>.
+                        </p>
+                    </div>
+                </div>
+            
+            
+            <section id="portfolio"></section>
+                <div class="container text-md-left" style="margin-top: 4%; padding-bottom: 10px; display: flex; gap: 1rem;">
+                    <div>
+                        <h2>Min portefølje</h2>
+                        <p style="max-width: 500px;">Hvis du er interessert i hva jeg har laget av både film eller spill kan
+                            du ta en titt på
+                            <a class="link" href="./html/portfolio.html">PORTFOLIO</a>.
+                        </p>
+                    </div>
+    
+                    <div>
+                        <img src="./img/American-Psycho-3-Stillpicture.jpg" alt="bilde"
+                            style="width: 400px; border-radius: 1em; box-shadow: -5px 3px 5px #00000066;">
+                    </div>
+                </div>
         </div>
-        </div>
+    </div>
 
-        <footer>
-            <div class="footer-content">
-                <h3>martin hermansen</h3>
-                <p>Kontakt sekretæren min om du trenger noen å snakke med: 90061232 <i class="fa-solid fa-phone"></i></p>
-                <p>Kontakt meg via mail på <a href="mailto:martinher@viken.no">martinher@viken.no</a> <i class="fa-solid fa-envelope"></i></p>
-                    <ul class="socials">
-                        <li><a href="https://github.com/martinher00" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="https://viken.no/glemmen-vgs/" target="_blank"><i class="fa-sharp fa-solid fa-graduation-cap"></i></a></li>
-                    </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>website designed by <span>martin hermansen</span></p>
-            </div>
-        </footer>
-        
-    </body>
+    
+
+    <footer>
+        <div class="footer-content">
+            <h3>martin hermansen</h3>
+            <p>Kontakt sekretæren min om du trenger noen å snakke med: 90061232 <i class="fa-solid fa-phone"></i></p>
+            <p>Kontakt meg via mail på <a href="mailto:martinher@viken.no">martinher@viken.no</a> <i
+                    class="fa-solid fa-envelope"></i></p>
+            <ul class="socials">
+                <li><a href="https://github.com/martinher00" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://viken.no/glemmen-vgs/" target="_blank"><i
+                            class="fa-sharp fa-solid fa-graduation-cap"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>website designed by <span>martin hermansen</span></p>
+        </div>
+    </footer>
+
+    </div>
+
+
+</body>
+
 </html>
