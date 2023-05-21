@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky">
         <div class="text_logo">
             <img src="../img/logo_martin.png" id="img_logo" alt="logo">
             Martin Hermansen
@@ -29,10 +29,10 @@
                     <a href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html" class="active"> Portfolio</a>
+                    <a href="./projects.html">Projects</a>
                 </li>
                 <li>
-                    <a href="./projects.html">Projects</a>
+                    <a href="./portfolio.html" class="active"> Portfolio</a>
                 </li>
                 <li>
                     <a href="./contact.html">Contact</a>
@@ -45,29 +45,46 @@
             <div></div>
         </label>
     </header>
-    
-      <section aria-label="slides">
-        <div class="container">
-            <div class="carousel" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
-                <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="../img/reservoir_dogs.jpg" alt="photo" class="image_slide">
-                        <div class="slide-content">
-                            <h1 style="color: #fff;">Film</h1>
-                            <a href="#" class="buttonClass">Check out</a>
-                        </div>
-                    </li>
-                    <li class="slide">
-                        <img src="../img/gaming_slide.jpg" alt="photo" class="image_slide">
-                    </li>
-                    
-                </ul>
+
+    <div class="content" style="position: absolute;">
+        <section aria-label="slides">
+            <div class="container">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="../img/reservoir_dogs.jpg" alt="photo" class="image_slide">
+                            <div class="slide-content">
+                                <h1 style="color: #fff;">Mine filmer</h1>
+                                <a href="https://youtube.com" target="_blank" class="buttonClass">Se</a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <img src="../img/gaming_slide.jpg" alt="photo" class="image_slide">
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
-        </div>
-        
-      </section>
+          </section>
+    
+          <footer>
+            <div class="footer-content">
+                <h3>martin hermansen</h3>
+                <p>Kontakt sekretæren min om du trenger noen å snakke med: 90061232 <i class="fa-solid fa-phone"></i></p>
+                <p>Kontakt meg via mail på <a href="mailto:martinher@viken.no">martinher@viken.no</a> <i class="fa-solid fa-envelope"></i></p>
+                    <ul class="socials">
+                        <li><a href="https://github.com/martinher00" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://viken.no/glemmen-vgs/" target="_blank"><i class="fa-sharp fa-solid fa-graduation-cap"></i></a></li>
+                    </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>website designed by <span>martin hermansen</span></p>
+            </div>
+        </footer>
+    </div>
 
 </body>
 

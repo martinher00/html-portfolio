@@ -3,8 +3,8 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
     font-family: "Oswald", sans-serif;
+    color: #fff;
 }
 
 a{
@@ -14,7 +14,20 @@ a{
 
 body {
     margin: 0;
-    background-color: #f4fcfc;
+    background-color: #1c1c1c;
+}
+
+.content{
+    margin-top: 30px;
+}
+
+hr{
+    width: 95%; 
+    margin: 0 auto;
+}
+
+a.link:hover{
+    text-decoration: underline !important;
 }
 
 /* Buttons */
@@ -58,7 +71,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
+}
 
+.sticky{
+    position: fixed;
+    top: 0;
 }
 
 header nav ul {
@@ -192,11 +210,11 @@ footer{
 
 .socials a i{
     font-size: 1.1rem;
-    transition: color .4s ease;
+    transition: color .2s ease;
 }
 
 .socials a:hover i{
-    color: aqua;
+    color: #505050;
 }
 
 .footer-bottom{
@@ -271,7 +289,7 @@ footer{
     border: none;
     font-size: 4rem;
     top: 50%;
-    transform: translate(-50%);
+    /* transform: translate(-50%); */
     color: rgba(255,255,255, .5);
     cursor: pointer;
     border-radius: .25rem;
